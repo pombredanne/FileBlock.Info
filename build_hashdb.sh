@@ -486,6 +486,6 @@ hashdb import FileBlock.Import VxShare149-DFXML.DFXML
 hashdb import FileBlock.Import VxShare150.DFXML
 hashdb size FileBlock.Import
 
-hashdb create FileBlock.Info’)
+hashdb create FileBlock.Info
 hashdb subtract FileBlock.Import FileBlock.White FileBlock.Info
 hashdb size FileBlock.Info
