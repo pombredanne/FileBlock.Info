@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 wget http://d1.fileblock.info/VxShare150.7z
 p7zip -d VxShare150.7z
 hashdb create VxShare150

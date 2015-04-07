@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-#  Ubuntu 14.04.02
+#  Ubuntu 14.04.02 
 #
 
 sudo apt-get -y install gcc git python-dev python-pip python-socksipy swig

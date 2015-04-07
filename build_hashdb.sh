@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 sudo apt-get -y install p7zip
 
 wget http://d0.fileblock.info/XP.7z
