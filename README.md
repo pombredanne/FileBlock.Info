@@ -3,7 +3,7 @@
 <h3>Whitelist</h3>
 <table>
 <thead>
-<th>Data</th>
+<th>Blocks</th>
 <th>Link</th>
 </thead>
 </table>
