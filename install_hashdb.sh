@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-#  Ubuntu 14.04.02 
+#  Ubuntu 14.04.02 Desktop
 #
 
 sudo apt-get -y install gcc g++ openssl flex libewf-dev libxml2-dev libssl-dev libtre-dev libtool
