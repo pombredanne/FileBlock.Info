@@ -2,6 +2,7 @@
 # See the file 'LICENSE' for copying permission.
 
 import os
+import json
 
 from viper.common.out import cyan
 from viper.common.utils import hexdump
@@ -17,7 +18,7 @@ except ImportError:
 class BulkExtractor(Module):
     cmd = 'bulk_extractor'
     description = 'Parse binaries with bulk_extractor'
-    authors = ['John Lukach']
+    authors = ['John B. Lukach']
 
     def __init__(self): 
         super(BulkExtractor, self).__init__()
@@ -27,6 +28,7 @@ class BulkExtractor(Module):
         self.parser.add_argument('-d','--domain',action='store_true',help='List domain addresses found')
         self.parser.add_argument('-b','--blocks',action='store_true',help='List matching blocks found')
         self.parser.add_argument('-v','--view',action='store_true',help='Display hex view of blocks')
+        self.parser.add_argument('-l','--list',action='store_true',help='Samples with matching blocks')
 
     def scan(self):        
         if os.path.exists(__sessions__.current.file.path+'_dir'):
@@ -94,14 +96,52 @@ class BulkExtractor(Module):
                 self.log('item',line)
             file.close()
         else:
-            self.log('warning',"Must -s or --scan with bulk_extractor first")
+            self.log('warning',"Must -s or --scan with bulk_extractor with hashdb enabled first")
+            self.log('info',"https://github.com/simsong/hashdb")
 
     def view(self):    
         offset_input = input("Enter numeric offset: ")
+        self.log('',offset_input)
         self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input:], maxlines=32)))
+        self.log('',offset_input+512)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+512:], maxlines=32)))
+        self.log('',offset_input+1024)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+1024:], maxlines=32)))
+        self.log('',offset_input+1536)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+1536:], maxlines=32)))
+        self.log('',offset_input+2048)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+2048:], maxlines=32)))
+        self.log('',offset_input+2560)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+2560:], maxlines=32)))
+        self.log('',offset_input+3072)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+3072:], maxlines=32)))
+        self.log('',offset_input+3584)
+        self.log('', cyan(hexdump(__sessions__.current.file.data[offset_input+3584:], maxlines=32)))
+        self.log('',offset_input+4096)
+
+    def list(self):
+        hash_input = raw_input("Enter block hash: ")
+        if os.path.exists('FileBlock.Info'): 
+            os.system('hashdb scan_expanded_hash FileBlock.Info '+hash_input+' > '+__sessions__.current.file.path+'_dir/'+hash_input+'.json')
+            file = open(__sessions__.current.file.path+'_dir/'+hash_input+'.json','r')
+            file.readline()
+            file.readline()
+            file.readline() 
+            data = file.readline()
+            try: 
+                j = json.loads(data) 
+                parent =  j["sources"]
+                for item in parent:
+                    self.log('item',item["filename"])
+            except: 
+                self.log('item','Exceeded the default number of hashes printed by hashdb') 
+            file.close()
+        else:
+            self.log('warning',"Download the FileBlock.Info hashdb to search")
+            self.log('info',"https://github.com/jblukach/FileBlock.Info")
 
     def usage(self):
-        self.log('',"Usage: bulk_extractor -s --scan|-e --email|-i --ip|-d --domain|-b --blocks|-v --view")
+        self.log('',"Usage: bulk_extractor -s --scan|-e --email|-i --ip|-d --domain|-b --blocks|-v --view|-l --list")
 
     def run(self):
         super(BulkExtractor, self).run()
@@ -128,6 +168,8 @@ class BulkExtractor(Module):
                 self.blocks()
             elif self.args.view:
                 self.view()
+            elif self.args.list:
+                self.list()
             else:
                 self.log('error','At least one of the parameters is required')
                 self.usage()
