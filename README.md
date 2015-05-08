@@ -1,6 +1,6 @@
 # FileBlock.Info
 ![alt text](images/viper-bulk_extractor.png "http://viper.li")
-<h3>Whitelist Blocks</h3>
+##Whitelist Blocks
 <table>
 <thead>
 <th>MD5</th>
@@ -15,7 +15,7 @@
 <tr><td>94dadf637c3b59a21951e2aa3c45a380</td><td>http://fileblock.info/WIN8.7z</td><td>79</td></tr>
 <tr><td>eb81523a9cf4b5f5a1f02c9762229142</td><td>http://fileblock.info/WIN2K12.7z</td><td>50</td></tr>
 </table>
-<h3>Blacklist Blocks</h3>
+##Blacklist Blocks
 <table>
 <thead>
 <th>MD5</th>
