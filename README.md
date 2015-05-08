@@ -1,4 +1,5 @@
 # FileBlock.Info
+##Binary Analysis
 ![alt text](images/viper-bulk_extractor.png "http://viper.li")
 ##Whitelist Blocks
 <table>
