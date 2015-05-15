@@ -1,5 +1,4 @@
-﻿ECHO
-
+@echo on
 hashdb create FileBlock.White
 hashdb add c:\hashdb\XP c:\FileBlock.White
 hashdb add c:\hashdb\VISTA c:\FileBlock.White
@@ -162,5 +161,7 @@ hashdb add c:\hashdb\VxShare149 c:\FileBlock.Import
 hashdb add c:\hashdb\VxShare150 c:\FileBlock.Import
 hashdb add c:\hashdb\VxShare151 c:\FileBlock.Import
 hashdb add c:\hashdb\VxShare152 c:\FileBlock.Import
+hashdb add c:\hashdb\VxShare153 c:\FileBlock.Import
+hashdb add c:\hashdb\VxShare154 c:\FileBlock.Import
 hashdb create FileBlock.Info
 hashdb subtract FileBlock.Import FileBlock.White FileBlock.Info
