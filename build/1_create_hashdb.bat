@@ -1,4 +1,4 @@
-﻿ECHO
+@echo on
 hashdb create c:\hashdb\VISTA
 hashdb create c:\hashdb\WIN2K3
 hashdb create c:\hashdb\WIN7
@@ -159,3 +159,5 @@ hashdb create c:\hashdb\VxShare149
 hashdb create c:\hashdb\VxShare150
 hashdb create c:\hashdb\VxShare151
 hashdb create c:\hashdb\VxShare152
+hashdb create c:\hashdb\VxShare153
+hashdb create c:\hashdb\VxShare154
