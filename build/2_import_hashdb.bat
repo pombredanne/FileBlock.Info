@@ -1,4 +1,4 @@
-﻿ECHO
+@echo on
 hashdb import C:\hashdb\XP DFXML/XP.DFXML
 hashdb import C:\hashdb\VISTA DFXML/VISTA.DFXML
 hashdb import C:\hashdb\WIN2K3 DFXML/WIN2K3.DFXML
@@ -159,3 +159,5 @@ hashdb import C:\hashdb\VxShare149 DFXML/VxShare149.DFXML
 hashdb import C:\hashdb\VxShare150 DFXML/VxShare150.DFXML
 hashdb import C:\hashdb\VxShare151 DFXML/VxShare151.DFXML
 hashdb import C:\hashdb\VxShare152 DFXML/VxShare152.DFXML
+hashdb import C:\hashdb\VxShare153 DFXML/VxShare153.DFXML
+hashdb import C:\hashdb\VxShare154 DFXML/VxShare154.DFXML
