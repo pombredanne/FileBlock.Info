@@ -1,4 +1,4 @@
-﻿ECHO
+@echo on
 7z a c:\compressed\XP.7z c:\hashdb\XP
 7z a c:\compressed\VISTA.7z c:\hashdb\VISTA
 7z a c:\compressed\WIN2K3.7z c:\hashdb\WIN2K3
@@ -157,6 +157,7 @@
 7z a c:\compressed\VxShare148.7z c:\hashdb\VxShare148
 7z a c:\compressed\VxShare149.7z c:\hashdb\VxShare149
 7z a c:\compressed\VxShare150.7z c:\hashdb\VxShare150
-7z a c:\compressed\VxShare150.7z c:\hashdb\VxShare151
-7z a c:\compressed\VxShare150.7z c:\hashdb\VxShare152
-
+7z a c:\compressed\VxShare151.7z c:\hashdb\VxShare151
+7z a c:\compressed\VxShare152.7z c:\hashdb\VxShare152
+7z a c:\compressed\VxShare153.7z c:\hashdb\VxShare153
+7z a c:\compressed\VxShare154.7z c:\hashdb\VxShare154
