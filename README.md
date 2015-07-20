@@ -1,8 +1,13 @@
 # FileBlock.Info
 ##Build HashDB
-1. Run the following bulk_extractor command to generate a sector hashdb of the VirusShare.com torrent files.
+1. Run the following bulk_extractor command to generate a sector hashdb of the extracted VirusShare.com torrent files.  The database will be found in the output folder that by default is called hashdb.
 ```
 bulk_extractor -x accts -x aes -x base64 -x elf -x email -x exif -x find -x gps -x gzip -x hiberfile -x httplogs -x json -x kml -x msxml -x net -x pdf -x rar -x sqlite -x vcard -x windirs -x winlnk -x winpe -x winprefetch -x zip -e hashdb -o VxShare159_Out -S hashdb_mode=import -S hashdb_import_repository_name=VxShare159 -S hashdb_block_size=512 -S hashdb_import_sector_size=512 -R VirusShare_00159
+```
+2. Consolidate the sector databases into one collection using the following hashdb commands.  Only create the sector database the first time that blocks are added.
+```
+hashdb create -p 512 FileBlock.Import
+hashdb add VxShare159 FileBlock.Import
 ```
 
 ##Use HashDB
