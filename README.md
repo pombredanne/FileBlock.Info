@@ -23,17 +23,21 @@ Follow @FileBlocks on Twitter to Direct Message a.k.a. DM a request for a downlo
 <tr><td>FileBlock.Info.7z.011</td><td>869ce9327c6d4241adae290c8735dc15</td></tr>
 <tr><td>FileBlock.Info.7z.012</td><td>a00341a09a197100673a0e497146f200</td></tr>
 <tr><td>FileBlock.Info.7z.013</td><td>852cbbb0f93321802c76009e3c78a817</td></tr>
-<tr><td>FileBlock.Info.7z.014</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.015</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.016</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.017</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.018</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.019</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.020</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.021</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.021</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.022</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.023</td><td></td></tr>
-<tr><td>FileBlock.Info.7z.024</td><td></td></tr>
+<tr><td>FileBlock.Info.7z.014</td><td>b67a4c4b8b85916b092721245eecd534</td></tr>
+<tr><td>FileBlock.Info.7z.015</td><td>7efed522ed93713f2502a122e66ac63b</td></tr>
+<tr><td>FileBlock.Info.7z.016</td><td>44720a569cd1a8c4b339ef147853d043</td></tr>
+<tr><td>FileBlock.Info.7z.017</td><td>a09c9c1c54a0cc5f0f98d2b5492b5c5b</td></tr>
+<tr><td>FileBlock.Info.7z.018</td><td>d4717048ce81f9a16c312e8cd90c3bdc</td></tr>
+<tr><td>FileBlock.Info.7z.019</td><td>56086f2656a812a0cbd5af3320bbb910</td></tr>
+<tr><td>FileBlock.Info.7z.020</td><td>8f23fe37a40905b212b4295d7c6fe0b2</td></tr>
+<tr><td>FileBlock.Info.7z.021</td><td>21e4afbdf7771180dc2ef43d7cf9022e</td></tr>
+<tr><td>FileBlock.Info.7z.022</td><td>a7acfe1ee9e8914a7f9258e74d713d27</td></tr>
+<tr><td>FileBlock.Info.7z.023</td><td>93378e39a3f6ca0f090798d4d3d54e32</td></tr>
+<tr><td>FileBlock.Info.7z.024</td><td>bae391861c8353b235b76fbe29664c03</td></tr>
 </table>
-
+Run the following command to validate that the database has been reassembled and is functioning correctly.
+```
+C:\>hashdb size FileBlock.Info
+hash store size: 9542732353
+source store size: 10369882
+```
