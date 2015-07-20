@@ -1,5 +1,9 @@
 # FileBlock.Info
 ##Build HashDB
+1. Run the following bulk_extractor command to generate a sector hashdb of the VirusShare.com torrent files.
+```
+bulk_extractor -x accts -x aes -x base64 -x elf -x email -x exif -x find -x gps -x gzip -x hiberfile -x httplogs -x json -x kml -x msxml -x net -x pdf -x rar -x sqlite -x vcard -x windirs -x winlnk -x winpe -x winprefetch -x zip -e hashdb -o VxShare159_Out -S hashdb_mode=import -S hashdb_import_repository_name=VxShare159 -S hashdb_block_size=512 -S hashdb_import_sector_size=512 -R VirusShare_00159
+```
 
 ##Use HashDB
 
@@ -35,7 +39,7 @@ Follow @FileBlocks on Twitter to Direct Message a.k.a. DM a request for a downlo
 <tr><td>FileBlock.Info.7z.023</td><td>93378e39a3f6ca0f090798d4d3d54e32</td></tr>
 <tr><td>FileBlock.Info.7z.024</td><td>bae391861c8353b235b76fbe29664c03</td></tr>
 </table>
-Run the following command to validate that the database has been reassembled and is functioning correctly.
+Run the following hashdb command to validate that the database has been reassembled and is functioning correctly after the transfer.
 ```
 C:\>hashdb size FileBlock.Info
 hash store size: 9542732353
