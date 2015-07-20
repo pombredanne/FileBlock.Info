@@ -1,11 +1,9 @@
 # FileBlock.Info
-<<<<<<< HEAD
 ##Build HashDB
 
 ##Use HashDB
 
 ##Aquire Copy
-
 
 
 ##Whitelist Blocks
