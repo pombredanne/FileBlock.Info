@@ -21,9 +21,3 @@
 <tr><td>94dadf637c3b59a21951e2aa3c45a380</td><td>http://fileblock.info/WIN8.7z</td><td>79</td></tr>
 <tr><td>eb81523a9cf4b5f5a1f02c9762229142</td><td>http://fileblock.info/WIN2K12.7z</td><td>50</td></tr>
 </table>
-
-=======
-##Binary Analysis
-![alt text](images/viper-bulk_extractor.png "http://viper.li")
-##Direct Message @FileBlocks on Twitter for download options
->>>>>>> origin/master
