@@ -8,8 +8,19 @@ Consolidate the sector databases into one collection using the following hashdb 
 ```
 hashdb create -p 512 FileBlock.Import
 hashdb add VxShare159 FileBlock.Import
+...
 ```
-
+Download the NIST NSRL blocks from http://www.nsrl.nist.gov/ftp/MD5B512/ and consolidate into a single collection using these hashdb commands for each set.
+```
+hashdb create -p 512 FileBlock.NSRL
+hashdb import_tab FileBlock.NSRL MD5B512_0.tab
+...
+```
+Finally subtract the whitelist block hashes from the blacklist block hashes to help limit false postives from code reuse.
+```
+hashdb create -p 512 FileBlock.Info
+hashdb subtract FileBlock.Import FileBlock.NSRL FileBlock.Info
+```
 ##Use HashDB
 
 ##Aquire Copy
