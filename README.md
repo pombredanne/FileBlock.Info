@@ -22,7 +22,14 @@ hashdb create -p 512 FileBlock.Info
 hashdb subtract FileBlock.Import FileBlock.NSRL FileBlock.Info
 ```
 ##Use HashDB
-
+Scan files, images and memory using this bulk_extractor command to locate matching sector block hashes using the FileBlock.Info hashdb database.
+```
+bulk_extractor -e hashdb -S hashdb_mode=scan -S hashdb_scan_path_or_socket=FileBlock.Info -S hashdb_block_size=512 -o be2_out be2.vmem 
+```
+Review the identified_blocks.txt file for matches or use the hashdb command expand_identified_blocks for more details on associated samples.
+```
+hashdb expand_identified_blocks FileBlock.Info identified_blocks.txt
+```
 ##Aquire Copy
 Follow @FileBlocks on Twitter to Direct Message a.k.a. DM a request for a download link.  The collection is about 105 GB containing twenty four split compressed 7zip files that when unpacked will require 265 GB of disk space.
 <table>
