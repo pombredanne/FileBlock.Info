@@ -31,7 +31,7 @@ Review the identified_blocks.txt file for matches or use the hashdb command expa
 hashdb expand_identified_blocks FileBlock.Info identified_blocks.txt
 ```
 ##Aquire Copy
-Follow @FileBlocks on Twitter to Direct Message a.k.a. DM a request for a download link.  The collection is about 105 GB containing twenty four split compressed 7zip files that when unpacked will require 265 GB of disk space. HashDB-API Project: https://github.com/jblukach/hashdb-api too.
+Follow @FileBlocks on Twitter to Direct Message a.k.a. DM a request for a download link.  The collection is about 105 GB containing twenty four split compressed 7zip files that when unpacked will require 265 GB of disk space. Or hashdb-api project: https://github.com/jblukach/hashdb-api too.
 <table>
 <thead>
 <th>File</th>
