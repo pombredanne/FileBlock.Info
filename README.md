@@ -31,7 +31,7 @@ Review the identified_blocks.txt file for matches or use the hashdb command expa
 hashdb expand_identified_blocks FileBlock.Info identified_blocks.txt
 ```
 ##Aquire Copy
-Follow @FileBlocks on Twitter for more information or send a Direct Message a.k.a. DM for more details.
+Follow @FileBlocks on Twitter for more information or send a Direct Message a.k.a. DM for specific questions.
 <br><br>
 UPDATE: Started V2 with all the great artifacts but way less bandwidth requirements for distribution.
 ##Code
