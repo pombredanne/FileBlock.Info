@@ -33,6 +33,30 @@ hashdb expand_identified_blocks FileBlock.Info identified_blocks.txt
 ##Aquire Copy
 Follow @FileBlocks on Twitter for more information or send a Direct Message a.k.a. DM for specific questions.
 <br><br>
-UPDATE: Started V2 with all the same great artifacts but way less bandwidth requirements for distribution.
+http://download.fileblock.info/VxShare000.7z<br>
+http://download.fileblock.info/VxShare001.7z<br>
+http://download.fileblock.info/VxShare002.7z<br>
+http://download.fileblock.info/VxShare003.7z<br>
+http://download.fileblock.info/VxShare004.7z<br>
+http://download.fileblock.info/VxShare005.7z<br>
+http://download.fileblock.info/VxShare006.7z<br>
+http://download.fileblock.info/VxShare007.7z<br>
+http://download.fileblock.info/VxShare008.7z<br>
+http://download.fileblock.info/VxShare009.7z<br>
+http://download.fileblock.info/VxShare010.7z<br>
+http://download.fileblock.info/VxShare011.7z<br>
+http://download.fileblock.info/VxShare012.7z<br>
+http://download.fileblock.info/VxShare013.7z<br>
+http://download.fileblock.info/VxShare014.7z<br>
+http://download.fileblock.info/VxShare015.7z<br>
+http://download.fileblock.info/VxShare016.7z<br>
+http://download.fileblock.info/VxShare017.7z<br>
+http://download.fileblock.info/VxShare018.7z<br>
+http://download.fileblock.info/VxShare019.7z<br>
+http://download.fileblock.info/VxShare020.7z<br>
+http://download.fileblock.info/VxShare021.7z<br>
+http://download.fileblock.info/VxShare022.7z<br>
+http://download.fileblock.info/VxShare023.7z<br>
+http://download.fileblock.info/VxShare024.7z<br>
 ##Code
 https://github.com/jblukach/hashdb-api
