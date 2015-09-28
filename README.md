@@ -197,5 +197,11 @@ http://download.fileblock.info/VxShare160.7z<br>
 http://download.fileblock.info/VxShare161.zip<br>
 http://download.fileblock.info/VxShare162.zip<br>
 http://download.fileblock.info/VxShare163.zip<br>
+http://download.fileblock.info/VxShare164.zip<br>
+http://download.fileblock.info/VxShare165.zip<br>
+http://download.fileblock.info/VxShare166.zip<br>
+http://download.fileblock.info/VxShare167.zip<br>
+http://download.fileblock.info/VxShare168.zip<br>
+http://download.fileblock.info/VxShare169.zip<br>
 ##Code
 https://github.com/jblukach/hashdb-api
